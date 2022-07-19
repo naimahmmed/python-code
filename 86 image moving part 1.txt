@@ -1,0 +1,33 @@
+from tkinter import *
+
+def go_up(event):
+    label.place(x=label.winfo_x(), y=label.winfo_y()-10)
+def go_down(event):
+    label.place(x=label.winfo_x(), y=label.winfo_y()+10)
+def go_left(event):
+    label.place(x=label.winfo_x()-10, y=label.winfo_y())
+def go_right(event):
+    label.place(x=label.winfo_x()+10, y=label.winfo_y())
+
+
+window = Tk()
+
+window.geometry("500x500")
+
+window.bind('<w>',go_up)
+window.bind('<s>',go_down)
+window.bind('<a>',go_left)
+window.bind('<d>',go_right)
+window.bind('<Up>',go_up)
+window.bind('<Down>',go_down)
+window.bind('<Left>',go_left)
+window.bind('<Right>',go_right)
+
+myImage = PhotoImage(file="car.png")
+
+label = Label(window,image=myImage)
+label.place(x=400, y=0)
+
+
+
+window.mainloop()

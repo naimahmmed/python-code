@@ -1,0 +1,30 @@
+from tkinter import *
+from time import *
+
+def update():
+    time_str = strftime("%I:%M:%S")
+    time_label.config(text=time_str)
+
+    day_str = strftime("%B")
+    day_label.config(text=day_str)
+
+    date_str = strftime("%B %d %Y")
+    date_label.config(text=date_str)
+
+    window.after(1000,update)
+
+
+window = Tk()
+
+time_label = Label(font=("Arial",50),fg="#00FF00",bg="Black")
+time_label.pack()
+
+day_label = Label(font=("Ink Free",20))
+day_label.pack()
+
+date_label = Label(font=("Ink Free",30))
+date_label.pack()
+
+update()
+
+window.mainloop()

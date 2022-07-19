@@ -1,0 +1,24 @@
+from tkinter import *
+from tkinter import colorchooser
+
+def chose():
+    #color = colorchooser.askcolor()
+    #print(color)
+    #colorhex = color[1]
+    #print(colorhex)
+    #window.config(bg=colorhex)
+
+
+    #color = colorchooser.askcolor()
+    #window.config(bg=colorhex)
+#also you can do this in one line of code!
+    window.config(bg=colorchooser.askcolor()[1])
+
+window = Tk()
+
+window.geometry("420x420")
+button = Button(window,text="chose color",command=chose)
+button.pack()
+
+
+window.mainloop()

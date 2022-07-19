@@ -1,0 +1,13 @@
+utensils = {"knife", "poons", "fork"}
+dishes = {"plate","jog","cup"}
+#utensils.add("napkins")
+#utensils.remove("fork")
+#utensils.clear()
+#utensils.update(dishes)
+
+#dinner_tables = utensils.union(dishes)
+#print(dishes.difference(utensils))
+#print(utensils.intersection(dishes))
+
+#for x in dinner_tables:
+    #print(x)

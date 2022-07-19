@@ -1,0 +1,13 @@
+food = ["biriyani","hotdog","barbicuw"]
+
+food[0] = "water"
+
+#food.append("ice cream")
+#food.remove("barbicuw")
+#food.pop()
+#food.insert(0,"cake")
+#food.sort()
+#food.clear()
+
+for x in food:
+    print(x)

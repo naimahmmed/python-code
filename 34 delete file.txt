@@ -1,0 +1,14 @@
+#import os
+import shutil
+path = "folder"
+
+try:
+    #os.remove(path)
+    #os.rmdir(path)
+    shutil.rmtree(path)
+except FileNotFoundError:
+    print("file not found")
+except PermissionError:
+    print("you do not have permission to delete that")
+else:
+    print(path+" was deleted")

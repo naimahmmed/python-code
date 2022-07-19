@@ -1,0 +1,9 @@
+name = "Naim"
+def display_name():
+    name = "Ahmmed"
+    print(name)
+
+
+
+display_name()
+print(name)

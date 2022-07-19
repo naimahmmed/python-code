@@ -1,0 +1,23 @@
+name = input("what is your name?: " )
+age = int(input("how old are you sir?: "))
+height = float(input("how tall are you sir? "))
+
+print("hello "+name)
+print("you are "+str(age)+" years old")
+print("you are "+str(height)+" cm tall sir")
+
+_________My coustomize_______
+name = input("what is your name?: " )
+age = int(input("how old are you sir?: "))
+height = float(input("how tall are you sir? "))
+Country = input("where are you from sir? ")
+city = input("whats the name of your city? ")
+Region = input("what is your region sir? ")
+
+print("hello "+name)
+print("you are "+str(age)+" years old")
+print("you are "+str(height)+" cm tall sir")
+print("youre from "+ Country)
+print("your city name is "+city)
+print("you are "+Region)
+print("please have a sit and take a coffee sir")

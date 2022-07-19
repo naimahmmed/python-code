@@ -1,0 +1,20 @@
+from tkinter import *
+
+window = Tk()
+photo = PhotoImage(file='png.png')
+label = Label(window,text="Hello world",
+              font=('Arial',40,'italic'),
+              fg='#264696',
+              background='black',
+              relief=RAISED,
+              bd=8,
+              padx=20,
+              pady=20,
+              image=photo,
+              compound='top')
+label.pack()
+#label.place(x=100,y=100)
+
+
+
+window.mainloop()

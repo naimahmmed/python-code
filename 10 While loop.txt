@@ -1,0 +1,15 @@
+1st____
+name = ""
+
+while len(name) == 0:
+    name = input("Enter your name: "+name)
+
+print("Hello "+name)
+
+2_______
+name = None
+
+while not (name:
+    name = input("Enter your name "+name)
+
+print("Hello "+name)

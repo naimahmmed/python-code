@@ -1,0 +1,25 @@
+from tkinter import *
+
+count = 0
+def click():
+    global count
+    count+=1
+    print(count)
+window = Tk()
+
+photo = PhotoImage(file='png.png')
+
+button = Button(text="Click me sir!",
+                command=click,
+                font=("Comic Sans",20,'italic'),
+                fg='#1d44a3',
+                bg='black',
+                activeforeground='#1d44a3',
+                activebackground='black',
+                image=photo,
+                compound='bottom')
+
+                #state=DISABLED)
+button.pack()
+
+window.mainloop()

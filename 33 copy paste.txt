@@ -1,0 +1,6 @@
+
+import shutil
+
+shutil.copyfile('test','copy of test.txt')
+shutil.copy('test','C:\\Users\\Ridoy Mahmud\\Desktop')
+shutil.copy2('test','C:\\Users\\Ridoy Mahmud\\Desktop')

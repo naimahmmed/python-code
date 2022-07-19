@@ -1,0 +1,40 @@
+from tkinter import *
+from tkinter import messagebox
+
+def click():
+    #messagebox.showinfo(title='This is messege info!',message="You are a person!")
+    #messagebox.showwarning(title='Warning!!', message="You have VIRUS!!!")
+    #messagebox.showerror(title='ERROR', message="something is wrong! :( ")
+    #if messagebox.askokcancel(title='ask ok cancel', message="do you want to do this??"):
+        #print("You did this!!")
+    #else:
+        #print("you canceled")
+
+    #if messagebox.askretrycancel(title='ask ok cancel', message="do you want to retry??"):
+        #print("You retried!!")
+    #else:
+        #print("you canceled")
+
+    #if messagebox.askyesno(title="Ask yes or no",message="do you like programming??"):
+        #print("you like programming too!!")
+    #else:
+        #print("why you dont like programming??")
+    #answer = messagebox.askquestion(title="ask question",message='do you like python?')
+    #if(answer == 'yes'):
+        #print("You like python too!!")
+    #else:
+        #print("why you dont like python??")
+
+    answer = messagebox.askyesnocancel(title='yes no or cancel',message='do you like code??',icon='info')
+    if(answer ==True):
+        print("you like to code!")
+    elif(answer==False):
+        print("You do not like code")
+    else:
+        print("you are so lazy go to your bed")
+
+window = Tk()
+
+button = Button(window,command=click,text='click me')
+button.pack()
+window.mainloop()

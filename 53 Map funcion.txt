@@ -1,0 +1,15 @@
+store = [("Shirt", 20.00),
+         ("Pants", 25.00),
+         ("Jacket", 50.00),
+         ("Socks", 10.00)]
+
+#to_euros = lambda data: (data[0],data[1]*.82)
+to_dollers = lambda data: (data[0],data[1]/.82)
+
+
+#store_euros = (map(to_euros, store))
+to_dollers = (map(to_dollers, store))
+
+
+for i in to_dollers:
+    print(i)

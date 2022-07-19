@@ -1,0 +1,4 @@
+text = "\nYooooooo\nnow this gonna be a good story\nhappy learning\n"
+
+with open('text','w') as file:
+    file.write(text)

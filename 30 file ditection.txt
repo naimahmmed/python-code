@@ -1,0 +1,12 @@
+import os
+
+path = "C:\\Users\\Ridoy Mahmud\\Desktop\\Python code"
+
+if os.path.exists(path):
+    print("This location exist!!")
+    if os.path.isfile(path):
+        print("this is a file")
+    elif os.path.isdir(path):
+        print("This is a directory")
+else:
+    print("This location dosen't exist!!")

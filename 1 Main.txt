@@ -1,0 +1,17 @@
+#name = "Naim Boss"
+#last_name = "is back"
+#full_name = name +" "+ last_name
+#print("hello world "+full_name)
+
+#age = 15
+#age += 1
+#print("your age is: "+str(age))
+#print(type(age))
+
+#height = 150.99
+#print("your height is "+str(height)+"cm")
+#print(type(height))
+
+#human = True
+#print("are you a human " +str(human))
+#print(type(human))

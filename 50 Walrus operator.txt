@@ -1,0 +1,14 @@
+uses of :=
+
+#foods = list()
+#while True:
+    #food = input("What food you like?: ")
+    #if food == "quit":
+        #break
+    #foods.append(food)
+
+#khaby lame style
+
+foods = list()
+while food := input("What food you like?: ") != "quit":
+    foods.append(food)

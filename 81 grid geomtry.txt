@@ -1,0 +1,19 @@
+from tkinter import *
+
+
+window = Tk()
+
+titleLabel = Label(window,text="Enter your info ",font=("Arial",25)).grid(row=0,column=0,columnspan=2)
+
+firstnameLabel = Label(window,text="First name: ").grid(row=1,column=0)
+firstnameEntry = Entry(window,bg="pink",fg="red").grid(row=1,column=1)
+
+lastnameLabel = Label(window,text="Last name: ").grid(row=2,column=0)
+lastnameEntry = Entry(window,bg="pink",fg="red").grid(row=2,column=1)
+
+emailLabel = Label(window,text="Email: ").grid(row=3,column=0)
+emailEntry = Entry(window,bg="pink",fg="red").grid(row=3,column=1)
+
+submitButton = Button(window,text="Submit",bg="green",fg="Blue").grid(row=4,column=0,columnspan=2)
+
+window.mainloop()

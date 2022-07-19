@@ -1,0 +1,35 @@
+from tkinter import *
+import time
+
+WIDTH = 500
+HEIGHT = 500
+xVlocity = 20
+yVlocity = 15
+
+window = Tk()
+
+canvas = Canvas(window,width=WIDTH,height=HEIGHT)
+canvas.pack()
+
+backgroud = PhotoImage(file='space.png')
+bg = canvas.create_image(0,0,image=backgroud,anchor=NW)
+
+ufo_image = PhotoImage(file='UFO.png')
+ufo = canvas.create_image(0,0,image=ufo_image,anchor=NW)
+
+image_width = ufo_image.width()
+image_height = ufo_image.height()
+
+while True:
+    coordinates = canvas.coords(ufo)
+    print(coordinates)
+    if(coordinates[0]>=(WIDTH-image_width) or coordinates[0]<0):
+        xVlocity = -xVlocity
+    if(coordinates[1]>=(HEIGHT-image_height) or coordinates[1]<0):
+        yVlocity = -yVlocity
+    canvas.move(ufo,xVlocity,yVlocity)
+    window.update()
+    time.sleep(0.01)
+
+
+window.mainloop()

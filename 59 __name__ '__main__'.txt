@@ -1,0 +1,22 @@
+________1st page___________
+def hello():
+    print("Hello!")
+
+if __name__ == '__main__':
+    hello()
+
+
+
+#if __name__ == '__main__':
+    #print("running module directly")
+
+#else:
+    #print("running other module directly")
+
+
+
+__________2nd page______________
+
+import main
+
+main.hello()

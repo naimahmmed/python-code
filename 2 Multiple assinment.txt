@@ -1,0 +1,25 @@
+#name = "Naim"
+#age = 15
+#attractive = True
+
+#name, age, attractive = "Naim", 21, True
+
+
+
+#print(name)
+#print(age)
+#print(attracive)
+
+
+#Rayhan = 15
+#Naim = 15
+#Ridoy = 15
+#Siam = 15
+
+
+Rayhan = Naim = Ridoy = Siam = 15
+
+print(Rayhan)
+print(Naim)
+print(Ridoy)
+print(Siam)

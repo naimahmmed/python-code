@@ -1,0 +1,10 @@
+student = ("Naim",15,"male")
+
+print(student.count("Naim"))
+print(student.index("male"))
+
+for x in student:
+    print(x)
+
+if "Naim" in student:
+    print("Naim is here")

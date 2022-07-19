@@ -1,0 +1,24 @@
+import smtplib
+
+sender = "b01naimboss1@gmail.com"
+receiver = "ridoymahmud11@gmail.com"
+password = "*******"
+subject = "Testing python"
+body = "Is this working or not?"
+
+massage = f"""From: {sender}
+To:{receiver}
+Subject: {subject}\n
+{body}
+"""
+
+server = smtplib.SMTP("smtp.gmail.com", 587)
+server.starttls()
+
+try:
+    server.login(sender, password)
+    print("Logging in.....")
+    server.sendmail(sender, receiver, massage)
+    print("Massage has been sent!!")
+except smtplib.SMTPAuthenticationError:
+    print("Unable to Login :(:")

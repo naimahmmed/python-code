@@ -1,0 +1,35 @@
+
+#def double(x):
+    #return x * 2
+
+#print(double(5))
+
+#students = ["Tony stark", "Steve rogers", "Peter parker", "Mr haward", "Banner"]
+
+
+#students.sort(reverse=True)
+
+#for i in students:
+    #print(i)
+
+#students = ("Tony stark", "Steve rogers", "Peter parker", "Mr haward", "Banner")
+
+
+#sorted_students = sorted(students, reverse=True)
+
+#for i in sorted_students:
+    #print(i)
+
+
+students = [("Banner", "F", 60),
+            ("Mr haward", "A", 33),
+            ("Peter parker", "D", 36),
+            ("Steve rogers", "B", 20),
+            ("Tony stark", "C", 78)]
+
+grade = lambda grades:grades[1]
+#students.sort(key=grade)
+sorted_students = sorted(students, key=grade)
+
+for i in sorted_students:
+    print(i)

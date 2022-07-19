@@ -1,0 +1,37 @@
+from tkinter import *
+
+def submit():
+    print("The temperature is: "+ str(scale.get())+" degree C")
+
+window = Tk()
+
+hotimage = PhotoImage(file='hot.png')
+hotlebel = Label(image=hotimage)
+hotlebel.pack()
+
+
+
+scale = Scale(window,from_=100,
+              to=0,
+              length=500,
+              orient=VERTICAL,
+              font=('Arial',15),
+              tickinterval=10,
+              #showvalue=0
+              resolution=5,
+              troughcolor= '#69EAFF',
+              fg= '#FF1C00',
+              bg= '#111111',
+              )
+
+scale.set(((scale['from']-scale['to'])/2)+scale['to'])
+
+scale.pack()
+
+hotimage2 = PhotoImage(file='cold.png')
+hotlebel2 = Label(image=hotimage2)
+hotlebel2.pack()
+
+button = Button(window,text='submit',command=submit)
+button.pack()
+window.mainloop()

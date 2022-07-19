@@ -1,0 +1,17 @@
+
+capital = {'USA': 'Washington DC',
+           'India': 'New Delhi',
+           'Bangladesh': 'Dhaka',
+           'Russia': 'Moscow'}
+capital.update({'Germany': 'Berlin'})
+capital.update({'USA': 'Las Vegas'})
+capital.pop('India')
+#print(capital['Germany'])
+#print(capital.get('Germany'))
+#print(capital.keys())
+#print(capital.values())
+#print(capital.items())
+#print(capital['Bangladesh'])
+
+for key,value in capital.items():
+    print(key,value)
